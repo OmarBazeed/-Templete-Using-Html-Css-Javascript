@@ -154,7 +154,7 @@ html {
 /* Starting Landing Page*/
 
 .landing-page {
-    background-image: url('../images/4.jpg');
+    background-image: url('../imgs/1.jpg');
     background-size: cover;
     position: relative;
     transition: 1s;
@@ -167,12 +167,17 @@ html {
     top: 0;
     left: 0;
     position: absolute;
+    z-index: 1;
+}
+
+.landing-page .container {
+    z-index: 2;
+    position: relative;
 }
 
 .landing-page .header-area {
     display: flex;
     color: white;
-    position: relative;
     padding: 10px;
     align-items: center;
 }
@@ -321,6 +326,7 @@ html {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    z-index: 2;
 }
 
 .introduction-text h1 {
@@ -338,6 +344,14 @@ html {
     }
     to {
         width: 580px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .introduction-text h1 {
+        animation: none;
+        width: 100%;
+        font-size: 16px !important;
     }
 }
 
@@ -776,7 +790,7 @@ html {
     position: absolute;
     top: 0;
     left: 63%;
-    width: 270%;
+    width: 130%;
     height: 292px;
     border-radius: 50%;
     background-color: var(--main-color);

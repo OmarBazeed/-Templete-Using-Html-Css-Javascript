@@ -2,8 +2,8 @@
 
 // localStorage.clear()
 
-//** Changing BackGround Randomly
-let BackgroundArray = ['url("../images/sky.jpg")', 'url("../images/maxresdefault.jpg")', 'url("../images/5.jpg")', 'url("../images/4.jpg")', 'url("../images/illustration.jpg")']
+// ** Changing BackGround Randomly
+let BackgroundArray = ["url('imgs/1.jpg')", "url('imgs/2.jpg')", "url('imgs/3.jpg')", " url('imgs/4.jpg')", "url('imgs/5.jpg')"]
 
 let MyHeader = document.querySelector(".landing-page");
 
@@ -11,8 +11,8 @@ let MyHeader = document.querySelector(".landing-page");
 let myRanddomBack;
 
 function playingTheInterval() {
-    myRanddomBack = setInterval(function() {
-        MyHeader.style.backgroundImage = BackgroundArray[parseInt(Math.random() * BackgroundArray.length)]
+    myRanddomBack = setInterval(() => {
+        MyHeader.style.backgroundImage = `${BackgroundArray[parseInt(Math.random() * BackgroundArray.length)]}`
     }, 5000)
 }
 playingTheInterval()
