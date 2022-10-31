@@ -158,6 +158,7 @@ html {
     background-size: cover;
     position: relative;
     transition: 1s;
+    overflow: hidden;
 }
 
 .landing-page .overlay {
@@ -347,11 +348,15 @@ html {
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:390px) {
+    .introduction-text {
+        top: 55%;
+    }
     .introduction-text h1 {
-        animation: none;
-        width: 100%;
-        font-size: 16px !important;
+        font-size: 15px !important;
+    }
+    .introduction-text p {
+        width: 50% !important;
     }
 }
 
@@ -790,7 +795,7 @@ html {
     position: absolute;
     top: 0;
     left: 63%;
-    width: 130%;
+    width: 95%;
     height: 292px;
     border-radius: 50%;
     background-color: var(--main-color);
