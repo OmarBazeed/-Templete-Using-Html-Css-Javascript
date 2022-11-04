@@ -350,7 +350,7 @@ html {
 
 @media screen and (max-width:390px) {
     .introduction-text {
-        top: 55%;
+        top: 58%;
     }
     .introduction-text h1 {
         font-size: 15px !important;
@@ -795,7 +795,7 @@ html {
     position: absolute;
     top: 0;
     left: 63%;
-    width: 95%;
+    width: 200%;
     height: 292px;
     border-radius: 50%;
     background-color: var(--main-color);
